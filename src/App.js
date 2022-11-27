@@ -12,7 +12,13 @@ export default function App() {
           Show modal
         </button>
 
-        <Modal isOpen={open} hide={toggle} headerContent='Header content' bodyContent="Body content" buttonContent='Button Content'/>
+        <Modal
+          isOpen={open}
+          hide={toggle}
+          headerContent="Header content"
+          bodyContent="Body content"
+          buttonContent="close"
+        />
       </div>
     </>
   );

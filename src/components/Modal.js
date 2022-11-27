@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
 import "./Modal.css";
 
-const Modal = ({ isOpen, hide, headerContent, bodyContent, buttonContent }) =>
+const Modal = ({ isOpen, hide, headerContent, bodyContent, buttonContent}) =>
   isOpen
     ? ReactDOM.createPortal(
         <>
@@ -11,17 +11,11 @@ const Modal = ({ isOpen, hide, headerContent, bodyContent, buttonContent }) =>
             <div className="modal__wrapper">
               <div className="modal">
                 <div className="modal__header">
-                  <h4>{headerContent}</h4>
-                  <button
-                    type="button"
-                    className="modal__close__button"
-                    onClick={hide}
-                  >
-                    <span>&times;</span>
-                  </button>
+                  <h4>{headerContent}</h4>              
                 </div>
                 <div className="modal__body">{bodyContent}</div>
-                <button className="button">{buttonContent}</button>
+                
+                <span className="close__button button" onClick={hide}>{buttonContent}</span>
               </div>
             </div>
           </div>
@@ -33,6 +27,9 @@ const Modal = ({ isOpen, hide, headerContent, bodyContent, buttonContent }) =>
 Modal.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   hide: PropTypes.func.isRequired,
+  headerContent: PropTypes.string,
+  bodyContent: PropTypes.string,
+  button: PropTypes.string
 };
 
 export default Modal;
