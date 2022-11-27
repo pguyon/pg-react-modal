@@ -18,6 +18,10 @@ export default function App() {
           headerContent="Header content"
           bodyContent="Body content"
           buttonContent="close"
+          overlayColor="grey"
+          modalColor="yellow"
+          buttonBackground="blue"
+          buttonColor="white"
         />
       </div>
     </>
