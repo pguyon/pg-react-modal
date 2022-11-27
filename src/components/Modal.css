@@ -48,3 +48,12 @@
     border: none;
     background: transparent;
   }
+
+  .button {
+    padding: 10px;
+    background-color: rgb(129, 129, 255);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
