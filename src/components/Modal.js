@@ -5,7 +5,7 @@ import "./Modal.css";
 
 const Modal = ({
   isOpen,
-  hide,
+  actionButton,
   headerContent,
   bodyContent,
   buttonContent,
@@ -27,7 +27,7 @@ const Modal = ({
                 <span
                   className="close__button button"
                   style={{ background: buttonBackground, color: buttonColor }}
-                  onClick={hide}
+                  onClick={actionButton}
                 >
                   {buttonContent}
                 </span>
@@ -41,7 +41,7 @@ const Modal = ({
 
 Modal.propTypes = {
   isOpen: PropTypes.bool.isRequired,
-  hide: PropTypes.func.isRequired,
+  actionButton: PropTypes.func.isRequired,
   headerContent: PropTypes.string,
   bodyContent: PropTypes.string,
   button: PropTypes.string,

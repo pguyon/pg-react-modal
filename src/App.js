@@ -3,7 +3,11 @@ import useModal from "./hooks/useModal";
 import Modal from "./components/Modal";
 
 export default function App() {
-  const { open, toggle } = useModal();
+  const { open, toggle, } = useModal();
+
+  const test = () => {
+        toggle();
+  }
 
   return (
     <>
@@ -14,7 +18,7 @@ export default function App() {
 
         <Modal
           isOpen={open}
-          hide={toggle}
+          actionButton={test}
           headerContent="Header content"
           bodyContent="Body content"
           buttonContent="close"
