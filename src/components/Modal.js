@@ -25,7 +25,7 @@ const Modal = ({
                 </div>
                 <div className="modal__body">{bodyContent}</div>
                 <span
-                  className="close__button button"
+                  className="button"
                   style={{ background: buttonBackground, color: buttonColor }}
                   onClick={actionButton}
                 >
@@ -44,7 +44,7 @@ Modal.propTypes = {
   actionButton: PropTypes.func.isRequired,
   headerContent: PropTypes.string,
   bodyContent: PropTypes.string,
-  button: PropTypes.string,
+  buttonContent: PropTypes.string.isRequired
 };
 
 export default Modal;

@@ -23,7 +23,7 @@ export default function App() {
           bodyContent="Body content"
           buttonContent="close"
           overlayColor="grey"
-          modalColor="yellow"
+          modalColor="lightgrey"
           buttonBackground="blue"
           buttonColor="white"
         />
