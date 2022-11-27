@@ -5,7 +5,6 @@
   width: 100vw;
   height: 100vh;
   z-index: 1040;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -40,14 +39,7 @@
   align-items: center;
 }
 
-.modal__close__button {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #000;
-  cursor: pointer;
-  border: none;
-  background: transparent;
-}
+
 
 .button {
   padding: 10px;
@@ -57,9 +49,7 @@
   margin-right: 10px;
 }
 
-.close__button {
-  background-color: rgb(250, 61, 61);
-}
+
 
 .modal__body {
   margin-bottom: 20px;
