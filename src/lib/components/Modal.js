@@ -53,7 +53,11 @@ Modal.propTypes = {
   headerContent: PropTypes.string,
   bodyContent: PropTypes.string,
   hide: PropTypes.func.isRequired,
-  buttonContent: PropTypes.string.isRequired
+  buttonContent: PropTypes.string.isRequired,
+  mainBackground: PropTypes.string,
+  modalBackground: PropTypes.string,
+  buttonBackground: PropTypes.string,
+  buttonColor: PropTypes.string
 };
 
 export default Modal;

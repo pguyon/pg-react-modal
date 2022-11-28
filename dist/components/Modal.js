@@ -57,7 +57,11 @@ Modal.propTypes = {
   headerContent: _propTypes.default.string,
   bodyContent: _propTypes.default.string,
   hide: _propTypes.default.func.isRequired,
-  buttonContent: _propTypes.default.string.isRequired
+  buttonContent: _propTypes.default.string.isRequired,
+  mainBackground: _propTypes.default.string,
+  modalBackground: _propTypes.default.string,
+  buttonBackground: _propTypes.default.string,
+  buttonColor: _propTypes.default.string
 };
 var _default = Modal;
 exports.default = _default;
