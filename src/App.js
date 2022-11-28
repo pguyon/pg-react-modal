@@ -26,6 +26,7 @@ export default function App() {
           modalColor="lightgrey"
           buttonBackground="blue"
           buttonColor="white"
+          hide={toggle}
         />
       </div>
     </>

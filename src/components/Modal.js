@@ -13,6 +13,7 @@ const Modal = ({
   modalColor,
   buttonBackground,
   buttonColor,
+  hide
 }) =>
   isOpen
     ? ReactDOM.createPortal(
@@ -22,6 +23,13 @@ const Modal = ({
               <div className="modal" style={{ background: modalColor }}>
                 <div className="modal__header">
                   <h4>{headerContent}</h4>
+                  <button
+                    type="button"
+                    className="modal__close__button"
+                    onClick={hide}
+                  >
+                    <span>&times;</span>
+                  </button>
                 </div>
                 <div className="modal__body">{bodyContent}</div>
                 <span
@@ -44,6 +52,7 @@ Modal.propTypes = {
   actionButton: PropTypes.func.isRequired,
   headerContent: PropTypes.string,
   bodyContent: PropTypes.string,
+  hide: PropTypes.func.isRequired,
   buttonContent: PropTypes.string.isRequired
 };
 
