@@ -1,7 +1,7 @@
 import React from "react";
 
-import { Modal} from "./lib";
-import useModal from "./lib/hooks/useModal"
+import { Modal } from "./lib";
+import useModal from "./lib/hooks/useModal";
 
 export default function App() {
   const { open, toggle } = useModal();
@@ -23,8 +23,8 @@ export default function App() {
           headerContent="Header content"
           bodyContent="Body content"
           buttonContent="close"
-          overlayColor="grey"
-          modalColor="lightgrey"
+          mainBackground="grey"
+          modalBackground="lightgrey"
           buttonBackground="blue"
           buttonColor="white"
           hide={toggle}

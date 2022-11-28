@@ -9,8 +9,8 @@ const Modal = ({
   headerContent,
   bodyContent,
   buttonContent,
-  overlayColor,
-  modalColor,
+  mainBackground,
+  modalBackground,
   buttonBackground,
   buttonColor,
   hide
@@ -18,20 +18,20 @@ const Modal = ({
   isOpen
     ? ReactDOM.createPortal(
         <>
-          <div className="modal__overlay" style={{ background: overlayColor }}>
-            <div className="modal__wrapper">
-              <div className="modal" style={{ background: modalColor }}>
-                <div className="modal__header">
+          <div className="main" style={{ background: mainBackground }}>
+            <div className="wrapper">
+              <div className="modal" style={{ background: modalBackground }}>
+                <div className="header">
                   <h4>{headerContent}</h4>
                   <button
                     type="button"
-                    className="modal__close__button"
+                    className="close__button"
                     onClick={hide}
                   >
                     <span>&times;</span>
                   </button>
                 </div>
-                <div className="modal__body">{bodyContent}</div>
+                <div className="body">{bodyContent}</div>
                 <span
                   className="button"
                   style={{ background: buttonBackground, color: buttonColor }}

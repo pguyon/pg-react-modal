@@ -16,32 +16,32 @@ const Modal = _ref => {
     headerContent,
     bodyContent,
     buttonContent,
-    overlayColor,
-    modalColor,
+    mainBackground,
+    modalBackground,
     buttonBackground,
     buttonColor,
     hide
   } = _ref;
   return isOpen ? /*#__PURE__*/_reactDom.default.createPortal( /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
-    className: "modal__overlay",
+    className: "main",
     style: {
-      background: overlayColor
+      background: mainBackground
     }
   }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "modal__wrapper"
+    className: "wrapper"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "modal",
     style: {
-      background: modalColor
+      background: modalBackground
     }
   }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "modal__header"
+    className: "header"
   }, /*#__PURE__*/_react.default.createElement("h4", null, headerContent), /*#__PURE__*/_react.default.createElement("button", {
     type: "button",
-    className: "modal__close__button",
+    className: "close__button",
     onClick: hide
   }, /*#__PURE__*/_react.default.createElement("span", null, "\xD7"))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "modal__body"
+    className: "body"
   }, bodyContent), /*#__PURE__*/_react.default.createElement("span", {
     className: "button",
     style: {
