@@ -1,13 +1,14 @@
 import React from "react";
-import useModal from "./hooks/useModal";
-import Modal from "./components/Modal";
+
+import { Modal} from "./lib";
+import useModal from "./lib/hooks/useModal"
 
 export default function App() {
-  const { open, toggle, } = useModal();
+  const { open, toggle } = useModal();
 
   const test = () => {
-        toggle();
-  }
+    toggle();
+  };
 
   return (
     <>
