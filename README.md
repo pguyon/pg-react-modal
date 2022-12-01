@@ -29,6 +29,41 @@ import useModal from 'pg-react-modal/dist/hooks/useModal'
 | buttonBackground | String | Allows you to change the background color of the button |
 | buttonColor | String | Allows you to change the text color of the button |
 
-![example]('./modal-example.pngmodal-example-png')
+## Example
+
+import { Modal } from 'pg-react-modal';
+import useModal from 'pg-react-modal/dist/hooks/useModal'
+
+
+function App() {
+  const { open, toggle } = useModal();
+
+    const test = () => {
+      toggle();
+    };
+  return (
+    
+    <>
+    <div>
+      <button className="modal-toggle" onClick={toggle}>
+        Show modal
+      </button>
+
+      <Modal
+        isOpen={open}
+        actionButton={test}
+        headerContent="Header content"
+        bodyContent="Body content"
+        buttonContent="close"
+        mainBackground="grey"
+        modalBackground="lightgrey"
+        buttonBackground="blue"
+        buttonColor="white"
+        hide={toggle}
+      />
+    </div>
+  </>
+  );
+}
 
 
