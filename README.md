@@ -39,20 +39,20 @@ import useModal from 'pg-react-modal/dist/hooks/useModal'
 function App() {
   const { open, toggle } = useModal();
 
-    const test = () => {
-      toggle();
+    const myOwnFunction = () => {
+      console.log('My own function');;
     };
   return (
     
     <>
-    <div>
+    <div>      
       <button className="modal-toggle" onClick={toggle}>
         Show modal
       </button>
 
       <Modal
         isOpen={open}
-        actionButton={test}
+        actionButton={myOwnFunction}
         headerContent="Header content"
         bodyContent="Body content"
         buttonContent="close"
