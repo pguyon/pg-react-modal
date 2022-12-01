@@ -24,7 +24,7 @@
 
 .modal {
   z-index: 100;
-  background: #fff;
+  background: rgb(228, 226, 226);
   position: relative;
   margin: auto;
   border-radius: 5px;
