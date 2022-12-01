@@ -13,7 +13,7 @@ import { Modal } from "pg-react-modal";
 ```
 - Import the hook
 ```sh
-import useModal from "pg-react-modal/hooks/useModal";
+import useModal from 'pg-react-modal/dist/hooks/useModal'
 ```
 
 | Parameters | Type | Description |
