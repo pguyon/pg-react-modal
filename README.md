@@ -31,6 +31,7 @@ import useModal from 'pg-react-modal/dist/hooks/useModal'
 
 ## Example
 
+```sh
 import { Modal } from 'pg-react-modal';
 import useModal from 'pg-react-modal/dist/hooks/useModal'
 
@@ -65,5 +66,6 @@ function App() {
   </>
   );
 }
+```
 
 
