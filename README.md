@@ -40,7 +40,7 @@ function App() {
   const { open, toggle } = useModal();
 
     const myOwnFunction = () => {
-      console.log('My own function');;
+      console.log('My own function !');
     };
   return (
     
