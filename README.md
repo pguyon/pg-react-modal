@@ -29,6 +29,6 @@ import useModal from 'pg-react-modal/dist/hooks/useModal'
 | buttonBackground | String | Allows you to change the background color of the button |
 | buttonColor | String | Allows you to change the text color of the button |
 
-![example]('modal-example-png')
+![example]('/../modal-example.pngmodal-example-png')
 
 
